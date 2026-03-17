@@ -1,0 +1,430 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+h1{
+    color: aliceblue;
+}
+body{
+    background-color: rgb(7, 2, 17);
+}
+.navbar{
+    padding: 20px 9%;
+
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    
+    
+} 
+ul li{
+    /* margin-left: 30px; */
+    list-style: none;
+
+}
+ul li a{
+    transition: 1ms;
+}
+ul li:hover a,ul li.kux a{
+    color:gold;
+}
+.main{
+    /* display: flex;
+flex-wrap: wrap; */
+    align-items: center;
+    padding: 40px;
+    margin-top: 50px;
+    color: white;
+    /* text-align: center; */
+}
+.home-info h1{
+
+    font-size: 32px;
+    color: chartreuse;
+}
+.home-info h2{
+font-size: 25px;
+margin-top: 5px;
+font-weight: 500;
+}
+.home-info p{
+font-size: 17px;
+margin: 30px 0px;
+}
+.main .button{
+    display: flex;
+    
+}
+ .d{
+    padding: 10px 20px;
+    background: green;
+    border: 2px solid green;
+    border-radius: 40px;
+    box-shadow: 0 0 10px goldenrod;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    transition: .5s;
+}
+.d:hover{
+    background: transparent;
+    color: chartreuse;
+    box-shadow: none;
+}
+.social {
+    margin-left: 30px;
+    
+    
+    
+    
+}
+.social a{
+    margin: 0  10px;
+    display: inline-flex;
+    padding: 5px ;
+    border: 2px solid green;
+    border-radius: 50%;
+    color: green;
+    font-size: 20px;
+    transition: transform .5s;
+}
+.social a:hover{
+    background: greenyellow;
+    color:green;
+    box-shadow: 0 0 10px green;
+
+    transform: translate(5px,-5px);
+}
+
+.img{
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid green;
+}
+.img img{
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
+.home-info h1 span{
+    color: ivory;
+
+}
+
+
+/* --------------about------------ */
+#about{ 
+    margin: 80px 30px;
+    
+    
+}
+.about-info{
+    display: flex;
+    
+    
+}
+.kk h1{
+margin-left: 170px;
+    font-size: 40px;
+    color:rgb(188, 65, 133) ;
+}
+.kk p{
+    margin-top: 20px;
+    margin-left: 170px;
+    color: darkgrey;
+    font-weight: 600;
+}
+
+ .image img{
+    height: 400px;
+    width: 300px;
+     object-position: 10% 30%;
+    object-fit: cover;
+    flex-basis: wrap;
+    border-radius: 10%;
+    transition: transform .5s;
+    
+}
+.image img:hover{
+    transform: translate(50px,-50px);
+    
+
+}
+.tab{
+    display: flex;
+    margin-top: 20px;
+    margin-left: -100px;
+   
+}
+.tab .tab-links{
+    color:rgb(188, 65, 133);
+    justify-content: space-between;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 195px;
+
+}
+.tab .tab-links:hover{
+    color:green;
+}
+.tab-content{
+    margin-top: 10px;
+    margin-left:20px;
+    
+    
+}
+.tab-content ul li {
+    color:white;
+}
+.tab-content ul li span{
+    color:rgb(188, 65, 133);
+}
+
+.tab-contentinfo{
+    display: flex;
+   
+}
+#services{
+    margin-left:30px ;
+}
+.servicelist{
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    margin-top: 40px;
+    color: aqua;
+}
+.servicelist div{
+    background: #262626;
+    height: 300px;
+    width: 300px;
+    padding: 30px;
+    font-size: 16px;
+    border-radius: 10%;
+}
+.servicelist div i{
+    margin-bottom: 20px;
+    font-size: 40px;
+    transition: background 0.5s, transform 0.5s;
+}
+.servicelist div:hover{
+    background: rgb(210, 44, 85);
+    transform: translateY(-15px);
+}
+.servicelist div p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+/* --------------------------contact-------------- */
+#contact{
+    margin: 50px 30px;
+}
+.row{
+    color: aliceblue;
+    
+}
+.container{
+    display: flex;
+
+}
+.contact-left{
+    flex-basis: 100%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.row p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+}
+.row p i{
+    margin-right: 10px;
+    color:rgb(210, 44, 85) ;
+}
+ .cv{
+
+   
+    margin-top: 50px !important;
+    margin-left: 40px;
+    width: 150px;
+    color: green;
+    border: 2px solid green;
+    background: green;
+    color: black;
+    padding-left:20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px goldenrod;
+    transition: .5s;
+}
+.cv:hover{
+    box-shadow: none;
+    background-color:rgb(210, 44, 85) ;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    color:white;
+    border-radius: 2%;
+    font-size: 15px;
+    background-color: #262626;
+}
+form .btn2{
+    margin: 20px  0;
+    height: 30px;
+    width:70px;
+    border: 2px solid green;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: green;
+    box-shadow: 0 0 10px goldenrod;
+    transition: .5s;
+
+}
+form .btn2:hover{
+background-color:rgb(210, 44, 85) ;
+   box-shadow: none;
+}
+
+
+
+#msg{
+    color: crimson;
+    margin-top: -20px;
+    display: block;
+}
+
+
+/* -----------------css for small screen */
+@media only screen and (max-width: 600px) {
+    /* Adjust the navbar */
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Main section */
+    .img {
+        height: 150px;
+        width: 150px;
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50px;
+    }
+    .home-info h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .home-info h2 {
+        font-size: 16px;
+        text-align: center;
+    }
+    .home-info p {
+        font-size: 12px;
+        text-align: center;
+    }
+    .d {
+        font-size: 12px;
+        height: auto;
+        padding: 5px 10px;
+    }
+    .main {
+        padding: 50px 15px;
+    }
+
+    /* About section */
+    .about-info {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .image img {
+        height: 200px;
+        width: 150px;
+    }
+    .kk h1 {
+        margin: 0;
+        font-size: 24px;
+    }
+    .kk p {
+        margin: 10px;
+    }
+
+    /* Tabs */
+    .tab {
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab .tab-links {
+        margin: 5px 0;
+    }
+
+    /* Services section */
+    .servicelist {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+    .servicelist div {
+        height: auto;
+        width: auto;
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    /* Contact section */
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    form input, form textarea {
+        font-size: 14px;
+        padding: 10px;
+    }
+    form .btn2 {
+        font-size: 14px;
+        width: auto;
+        padding: 5px 15px;
+    }
+}

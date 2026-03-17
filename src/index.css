@@ -1,0 +1,10 @@
+@import "tailwindcss";
+/* Gradient background similar to screenshot */
+.bg-skills-gradient {
+  background: radial-gradient(circle at top, #1a1443 0%, #0b0716 55%, #07050f 100%);
+}
+
+/* Optional clip path (if you want angled top like many portfolios) */
+.clip-path-custom {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}

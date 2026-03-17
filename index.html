@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/profile.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bed Prakash</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GKP22ZYT5L"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GKP22ZYT5L');
+</script>
+
+  </head>
+
+  <body>
+
+    <!-- Background Music -->
+    <audio id="bg-music" loop>
+      <source src="/song.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="root"></div>
+
+    <script type="module" src="/src/main.jsx"></script>
+
+    <!-- Script to play music after first click -->
+    <script>
+      document.addEventListener("click", function () {
+        const music = document.getElementById("bg-music");
+        music.play();
+      }, { once: true });
+    </script>
+
+  </body>
+</html>
